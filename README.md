@@ -68,6 +68,11 @@ We mark the upper left corner of the position with a red point to show its corre
 
 ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/mark.png)
 
+### Simulate Human Behavior
+The server may check the track of the movement to determine whether it is human behavior or not. We should add some noises into the track and use selenium to simulate the dragging process.
+
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/captcha.gif)
+
 
 
 
