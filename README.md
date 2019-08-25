@@ -40,6 +40,13 @@ CaptchaCracker
 python cracker.py
 ```
 
+## Implementation
+### Get Background and Puzzle Piece
+In order to prevent being cracked, the background in the sources of the front end is often cut into many small pieces and displayed after re-splicing. The first step is to get the orginal background picture and the puzzle piece.
+
+We can get the moving coordinates of each small background pieces from the elements of the front end and perform the inverse operation to restore the original background.
+
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/fig1.png) $\Longrightarrow$ ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/origin.png)
 
 
 
