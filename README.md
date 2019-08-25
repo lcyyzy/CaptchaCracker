@@ -48,6 +48,27 @@ We can get the moving coordinates of each small background pieces from the eleme
 
 ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/fig1.png) ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/rightarrow.png) ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/origin.png)
 
+We can get the puzzle piece from the sources directly.
+
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/puzzle.png)
+
+### Get the Contour of Puzzle Piece and the Edge of Background
+Extract the contour trajectory of the puzzle piece using ```cv2.findContours``` in the opencv and construct it into a two-dimensional matrix (operator).
+
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/shape-edge.jpg)
+
+Process the background by ```cv2.GaussianBlur``` and the Canny edge detection operator - ```cv2.Canny``` to find the edge in the background.
+
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/origin-canny.jpg)
+
+### Find the Position of Puzzle Piece
+Use cross-correlation operation to process the edge of background and the contour operator of the puzzle piece. The position with the largest value is the result.
+
+We mark the upper left corner of the position with a red point to show its correctness.
+
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/mark.png)
+
+
 
 
 
