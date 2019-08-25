@@ -46,7 +46,7 @@ In order to prevent being cracked, the background in the sources of the front en
 
 We can get the moving coordinates of each small background pieces from the elements of the front end and perform the inverse operation to restore the original background.
 
-![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/fig1.png) \Rightarrow ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/origin.png)
+![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/fig1.png) $\Rightarrow$ ![img](https://github.com/lcyyzy/CaptchaCracker/raw/master/img/origin.png)
 
 
 
